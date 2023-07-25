@@ -4,8 +4,8 @@
   "type": "pimcore-bundle",
   "authors": [
     {
-      "name": "Skynet Technologies Developer",
-      "email": "email@example.com"
+      "name": "Steven Wenzel",
+      "email": "developer3@skynettechnologies.com"
     }
   ],
   "require": {
