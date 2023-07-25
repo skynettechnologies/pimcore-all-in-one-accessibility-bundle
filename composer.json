@@ -3,7 +3,6 @@
   "license": "GPL-3.0-or-later",
   "type": "pimcore-bundle",
   "minimum-stability": "stable",
-  "license": "proprietary",
   "authors": [
     {
       "name": "Skynet Technologies Developer",
