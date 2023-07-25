@@ -1,0 +1,5 @@
+ada_pimcore:
+    resource: "@ADAPimcoreBundle/src/Controller/"
+    type:     annotation
+    prefix:   /
+
