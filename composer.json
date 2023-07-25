@@ -2,6 +2,7 @@
   "name": "skynettechnologies/pimcore-all-in-one-accessibility-bundle",
   "license": "GPL-3.0-or-later",
   "type": "pimcore-bundle",
+  "version": "0.0.1",
   "authors": [
     {
       "name": "Steven Wenzel",
