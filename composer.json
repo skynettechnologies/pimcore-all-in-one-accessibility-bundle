@@ -2,7 +2,7 @@
   "name": "skynettechnologies/pimcore-all-in-one-accessibility-bundle",
   "license": "GPL-3.0-or-later",
   "type": "pimcore-bundle",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Skynet Technologies Developer",
