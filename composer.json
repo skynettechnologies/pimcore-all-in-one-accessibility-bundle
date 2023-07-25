@@ -11,10 +11,12 @@
     }
   ],
   "require": {
-    "guzzlehttp/guzzle": "7.2"
-  },
-  "require-dev": {
+    "guzzlehttp/guzzle": "7.2",
     "pimcore/pimcore": "11.*"
   },
-  "Skynettechnologies\\ADABundle\\": "skynettechnologies/pimcore-all-in-one-accessibility-bundle/src"
+  "autoload": {
+    "psr-4": {
+      "Skynettechnologies\\ADABundle\\": "skynettechnologies/pimcore-all-in-one-accessibility-bundle/src"
+    }
+  }
 }
