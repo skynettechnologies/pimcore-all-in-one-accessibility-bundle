@@ -2,6 +2,7 @@
   "name": "skynettechnologies/pimcore-all-in-one-accessibility-bundle",
   "license": "GPL-3.0-or-later",
   "type": "pimcore-bundle",
+  "description": "bout It uses the accessibility interface which handles UI and design related adjustments. All in One Accessibility app enhances your PIMCore website accessibility to people with hearing or vision impairments, motor impaired, color blind, dyslexia, cognitive & learning impairments, seizure and epileptic, and ADHD problems.",
   "authors": [
     {
       "name": "Steven Wenzel",
