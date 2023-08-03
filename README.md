@@ -13,7 +13,7 @@ accessibility to people with hearing or vision impairments, motor impaired, colo
 
 
 ## Installation
--   Run `composer install skynettechnologies/pimcore-all-in-one-accessibility`
+-   Run `composer require skynettechnologies/pimcore-all-in-one-accessibility`
 -   Add `./bin/console pimcore:bundle:enable ADAPimcoreBundle`
 -   Add `<script id="aioa-adawidget" src="{{ AIOA_URL }}"></script>`put this line in your base.html footer
 
