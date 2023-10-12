@@ -23,7 +23,7 @@
 - Align Left
 - Align Right
   
-####Color and Contrast Adjustments
+#### Color and Contrast Adjustments
 - High Contrast
   
 #### Orientation Adjustments
