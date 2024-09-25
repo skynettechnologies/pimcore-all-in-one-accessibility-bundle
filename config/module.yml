@@ -1,0 +1,8 @@
+my_custom_module:
+    type: module
+    name: MyCustomModule
+    route: /admin/my-custom-module
+
+admin_menu:
+    - text: "My Custom Module"
+      route: "my_custom_module_create_page"

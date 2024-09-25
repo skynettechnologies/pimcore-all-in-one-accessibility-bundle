@@ -14,7 +14,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Skynettechnologies\\ADABundle\\": "skynettechnologies/pimcore-all-in-one-accessibility-bundle/src"
+      "Skynettechnologies\\ADABundle\\": "src/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Skynettechnologies\\ADABundle\\ADAPimcoreBundle"
+      ]
     }
   }
 }

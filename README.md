@@ -1,11 +1,11 @@
 # All in One Accessibility™
 
 All in One Accessibility AI Widget Supports 140 Languages and includes 70+ features. Screen Reader, Talk & Type, Voice Navigation, Dictionary, Virtual Keyboard, Accessibility Profiles, Sign language Libras (Brazilian Portuguese) Custom Widget Color, Icon size, Position, Talk & Type, GA4 Tracking and custom accessibility statement link are some of the top features.
-   
+
 Our AI automatically remediates images Alternative text and uses the accessibility interface which handles UI and design related adjustments. All in One Accessibility app enhances your website accessibility to people with hearing or vision impairments, motor impaired, color blind, dyslexia, cognitive & learning impairments, seizure and epileptic, and ADHD problems.
-   
+
 It improves website ADA compliance and browser experience for ADA, WCAG 2.0, 2.1 & 2.2, Section 508, California Unruh Act, Australian DDA, European EAA EN 301 549, UK Equality Act (EA), Israeli Standard 5568, Ontario AODA, Canada ACA, German BITV, France RGAA, Brazilian Inclusion Law (LBI 13.146/2015), Spain UNE 139803:2012, JIS X 8341 (Japan), Italian Stanca Act and Switzerland DDA Standards.
-   
+
 Follows the best industry security, SEO practices and standards ISO 9001:2015 & ISO 27001:2013 and complies with GDPR, COPPA regulations. Member of W3C and International Association of Accessibility Professionals (IAAP). It is a flexible & lightweight widget that can be changed according to law and reduces the risk of time-consuming accessibility lawsuits.
 
 Following features can be added as an addon:
@@ -26,38 +26,45 @@ English (USA), English (UK), English (Australian), English (Canadian), English (
 
 ### Prerequisites
 - Pimcore version ^11.0
-- Supported Minimum/Maximum Version of Platform
+- Supported 11.0/11.3.2 Version of Platform
 
 ### Steps
 
 ``` bash
 -   Run `composer require skynettechnologies/pimcore-all-in-one-accessibility-bundle`
 -   Add `./bin/console pimcore:bundle:enable ADAPimcoreBundle`
+Create a Page:
+-   Add `./bin/console app:create-page`
+Remove a Page:
+-   Add `./bin/console app:remove-page ada-setting <pagename>`
 -   Add `<script id="aioa-adawidget" src="{{ AIOA_URL }}"></script>`put this line in your base.html footer
 ```
 
 ## Usage
 
 ### default.html.twig
-Just add this tag in your base.html footer(your main template of PIMCore website) `<script id="aioa-adawidget" src="{{ AIOA_URL }}"></script>`:
-```python
-  <footer>
-    <script id="aioa-adawidget" src="{{ AIOA_URL }}"></script>
-  </footer>
+Just add this tag in your base.html footer(your main template of PIMCore website):
 ```
+<script id="aioa-adawidget" src="{{ AIOA_URL }}"></script>
+```
+
 
 ## Live Demo
 https://pimcoreaccessibility.skynettechnologies.us/
 
 ## Screenshots
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-1-free.jpg?v=2)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-1.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-2-free.jpg?v=2)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-2.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-3-free.jpg?v=2)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-3.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-4-free.jpg?v=2)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-4.jpg?v=2)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-5.jpg?v=2)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-6.jpg?v=2)
 
 ## Video
 

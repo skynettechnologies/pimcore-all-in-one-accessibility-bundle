@@ -3,3 +3,8 @@ ada_pimcore:
     type:     annotation
     prefix:   /
 
+ada_setting:
+    path: /ada-setting
+    controller: Skynettechnologies\ADABundle\Controller\DefaultController::indexAction
+
+

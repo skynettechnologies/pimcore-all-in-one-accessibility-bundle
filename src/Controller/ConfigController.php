@@ -79,9 +79,7 @@ class ConfigController extends \Pimcore\Controller\UserAwareController
      */
     public function listAction(Request $request): Response
     {
-
-
-        return $this->render('@ADAPimcore/admin/ada-setting.html.twig');;
+        return $this->render('@ADAPimcore/admin/ada_setting.html.twig');
     }
 
     /**

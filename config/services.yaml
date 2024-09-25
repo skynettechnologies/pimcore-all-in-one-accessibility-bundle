@@ -1,24 +1,35 @@
 services:
-    # default configuration for services in *this* file
+    # Default configuration for services in *this* file
     _defaults:
-        # automatically injects dependencies in your services
         autowire: true
-        # automatically registers your services as commands, event subscribers, etc.
         autoconfigure: true
-        # this means you cannot fetch services directly from the container via $container->get()
-        # if you need to do this, you can override this setting on individual services
-        public: false
+        public: false  # Default visibility for services
 
-    # controllers are imported separately to make sure they're public
-    # and have a tag that allows actions to type-hint services
+    # Define your services here
+    Skynettechnologies\ADABundle\Service\PageService:
+        arguments:
+            $logger: '@logger'
+
+    # Controllers are imported separately to make sure they're public
     Skynettechnologies\ADABundle\Controller\:
         resource: '../src/Controller'
-        public: true
-        tags: ['controller.service_arguments']
+        public: true  # Ensure controllers are public
 
-# add more services, or override services that need manual wiring
-#    Skynettechnologies\ADABundle\ExampleClass:
-#        arguments:
-#            - "@service_id"
-#            - "plain_value"
-#            - "%parameter%"
+    # Register commands
+    Skynettechnologies\ADABundle\Command\CreateDynamicPageCommand:
+        arguments:
+            $pageService: '@Skynettechnologies\ADABundle\Service\PageService'
+        tags:
+            - { name: 'console.command' }
+
+    Skynettechnologies\ADABundle\Command\RemoveDynamicPageCommand:
+        tags:
+            - { name: 'console.command' }
+
+    Skynettechnologies\ADABundle\ADAPimcoreBundle:
+        public: true # Make sure the bundle is public
+    Skynettechnologies\ADABundle\Twig\AppExtension:
+        arguments:
+            $adapimcoreBundle: '@Skynettechnologies\ADABundle\ADAPimcoreBundle'
+        tags:
+            - { name: twig.extension }
