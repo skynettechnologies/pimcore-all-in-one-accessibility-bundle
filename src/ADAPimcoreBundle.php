@@ -47,6 +47,6 @@ class ADAPimcoreBundle extends AbstractPimcoreBundle implements PimcoreBundleAdm
     }
     public function getAioaUrl(): string
     {
-        return 'https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=&token=&position=';
+        return 'https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=#420083&token=&position=bottom_right';
     }
 }

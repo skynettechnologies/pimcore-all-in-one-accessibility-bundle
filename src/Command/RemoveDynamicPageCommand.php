@@ -27,7 +27,7 @@ class RemoveDynamicPageCommand extends AbstractCommand
             ->addArgument('pagename', InputArgument::REQUIRED, 'The name of the page to remove');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $pageName = $input->getArgument('pagename');
 

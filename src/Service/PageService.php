@@ -114,6 +114,10 @@ class PageService
             $this->logger->error("Failed to create page: " . $e->getMessage());
         }
     }
+
+    /**
+     * @throws \Exception
+     */
     public function removePageByName($pageName)
     {
 

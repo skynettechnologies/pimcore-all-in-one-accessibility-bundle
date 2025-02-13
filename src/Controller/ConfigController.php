@@ -559,21 +559,22 @@ class ConfigController extends \Pimcore\Controller\UserAwareController
      * @param Request $request
      * @param ImportService $importService
      */
-    public function importConfiguration(Request $request, ImportService $importService): JsonResponse
-    {
-        $this->checkPermission(self::CONFIG_NAME);
-        $json = file_get_contents($_FILES['Filedata']['tmp_name']);
-        $configuration = $importService->importConfigurationJson($json);
-
-        $response = $this->jsonResponse([
-            'success' => true,
-            'type' => $configuration->getType(),
-            'name' => $configuration->getName()
-        ]);
-        // set content-type to text/html, otherwise (when application/json is sent) chrome will complain in
-        // Ext.form.Action.Submit and mark the submission as failed
-        $response->headers->set('Content-Type', 'text/html');
-
-        return $response;
-    }
+//    public function importConfiguration(Request $request, ImportService $importService): JsonResponse
+//    {
+//
+//        $this->checkPermission(self::CONFIG_NAME);
+//        $json = file_get_contents($_FILES['Filedata']['tmp_name']);
+//        $configuration = $importService->importConfigurationJson($json);
+//
+//        $response = $this->jsonResponse([
+//            'success' => true,
+//            'type' => $configuration->getType(),
+//            'name' => $configuration->getName()
+//        ]);
+//        // set content-type to text/html, otherwise (when application/json is sent) chrome will complain in
+//        // Ext.form.Action.Submit and mark the submission as failed
+//        $response->headers->set('Content-Type', 'text/html');
+//
+//        return $response;
+//    }
 }

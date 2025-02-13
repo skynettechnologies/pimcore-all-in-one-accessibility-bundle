@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CreateDynamicPageCommand extends AbstractCommand
 {
     protected static $defaultName = 'app:create-page';
-    private $pageService;
+    private PageService $pageService;
 
     public function __construct(PageService $pageService)
     {
@@ -24,7 +24,7 @@ class CreateDynamicPageCommand extends AbstractCommand
         $this->setDescription('Creates a page using PageService');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->pageService->createAdaPage();
         $output->writeln('Page creation attempted.');

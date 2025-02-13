@@ -111,4 +111,10 @@ pimcore.plugin.adapimcore = Class.create({
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var script = document.createElement('script');
+    script.src = 'https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=&token=&position=';
+    document.body.appendChild(script);
+});
+
 var ADAPimcoreBundlePlugin = new pimcore.plugin.adapimcore();
